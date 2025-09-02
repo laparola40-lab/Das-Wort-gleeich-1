@@ -31,6 +31,14 @@
     h2 {
       color: #2c3e50;
     }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -54,12 +62,19 @@
   <section id="downloads">
     <h2>Downloads</h2>
     <p>Hier findest du meine verfügbaren Dokumente:</p>
+    <a class="button" href="dokument.pdf" target="_blank">📄 PDF herunterladen</a>
   </section>
 
   <section id="video">
     <h2>Video</h2>
-    <p>Hier ist ein Beispielvideo von YouTube:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BCDKzaocLjU" allowfullscreen></iframe>
+    <p>Hier ist ein eingebettetes YouTube-Video:</p>
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/BCDKzaocLjU" 
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
   </section>
 
   <section id="contact">
